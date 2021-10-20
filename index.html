@@ -69,6 +69,11 @@ footer {
   padding: 50px;
   line-height: 35px;
 }
+                figure{
+display: table-cell;
+padding: 0 4px;
+text-align: center
+}
 
 .top-section {
   background-color: #47baa9;
@@ -95,6 +100,7 @@ footer {
     background-color:#47baa9 ;
     margin-top: 5%;
   }
+   
   .tribute-img {
     margin-top: 20px;
     margin-bottom: 50px;
@@ -136,24 +142,17 @@ footer {
             <p class="text-center">
               After the collection process I analyzed the collected data to find out if clusters of targets could be found that occur together more often. To identify this common occurrence, I have plotted the correlation between the 17 SDGs in a correlation matrix. I then filtered the results to display the data relevant to my thesis. First, I checked the significance of the individual values and faded out all with a p-value > 0.05. Then I faded out all values with a very low correlation to show only the values with a correlation above r = 0.04.
           </p>
-            <div>
-              <img src="SDG_heatmap_triangle.png" class="tribute-img img-thumbnail img-responsive" alt="Social Enterprise">
+            <div style="display: table; width: 100%;">
+              <figure><img src="SDG_heatmap_triangle.png" class="tribute-img img-thumbnail img-responsive" alt="Social Enterprise"><figcaption> The correlation of all SDGs displaxed in the matrix above</figcaption>
+                  </figure>
+                <figure><img src="Corr_matrix_p<0.05.png" class="tribute-img img-thumbnail img-responsive" alt="Social Enterprise"><figcaption>The correlations where filtered and every correlation with a higher p-value than 0.05 are eliminated.</figcaption>
+                    </figure>
+                 <figure><img src="corr>0.4_p<0.05.png" class="tribute-img img-thumbnail img-responsive" alt="Social Enterprise"><figcaption>Finally, all values with a moderate to strong correlation were kept. These are all values with r>=0.4.</figcaption>
+                </figure>
             </div>
-            <p class="text-center">
-                The correlation of all SDGs displaxed in the matrix above
-            </p>
-             <div>
-              <img src="Corr_matrix_p<0.05.png" class="tribute-img img-thumbnail img-responsive" alt="Social Enterprise">
-            </div>
-             <p class="text-center">
-                The correlations where filtered and every correlation with a higher p-value than 0.05 are eliminated.
-            </p>
-             <div>
-              <img src="corr>0.4_p<0.05.png" class="tribute-img img-thumbnail img-responsive" alt="Social Enterprise">
-            </div>
-            <p class="text-center">
-                Finally, all values with a moderate to strong correlation were kept. These are all values with r>=0.4.
-            </p>
+            
+             
+            
             
             
             <h1 class="page-header text-center">Startup lifecycle stages</h1>
