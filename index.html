@@ -129,13 +129,32 @@ footer {
           <p class="text-center">
               What is Impact? That's exactly the main Research Question of my thesis. But how could be measured what impact is? In my thesis I collected the data from 200 Intermediarie programs that have specialized themselves to support young ventures and Startups to ceate an impact on the planet and the humans living on it.
               I have selected the Sustainable Development Goals (SDGs) as an orientation for the goals that could fall into the area of impact.<a href='https://sdgs.un.org/goals'> The 17 SDGs</a> are formally defined to achieve a more sustainable and better world until the year of 2030 by the United Nations in 2015. In the process of data collection I identified to which goals the intermediaries commit themselves.
-              And after the collection process I analyzed the collected data to find out if clusters of targets could be found that occur together more often. To identify this common occurrence, I have plotted the correlation between the 17 SDGs in a correlation matrix. I then filtered the results to display the data relevant to my thesis. First, I checked the significance of the individual values and faded out all with a p-value > 0.05. Then I faded out all values with a very low correlation to show only the values with a correlation above 0.04.
+              
+          </p>
+            <h1 class="page-header text-center"> Impact categories correlation analysis</h1>
+            <p class="text-center">
+              After the collection process I analyzed the collected data to find out if clusters of targets could be found that occur together more often. To identify this common occurrence, I have plotted the correlation between the 17 SDGs in a correlation matrix. I then filtered the results to display the data relevant to my thesis. First, I checked the significance of the individual values and faded out all with a p-value > 0.05. Then I faded out all values with a very low correlation to show only the values with a correlation above r = 0.04.
           </p>
             <div>
-              <img src="countries_impact_barplot.png" class="tribute-img img-thumbnail img-responsive" alt="Social Enterprise">
-            </div>
-            <div>
               <img src="SDG_heatmap_triangle.png" class="tribute-img img-thumbnail img-responsive" alt="Social Enterprise">
+            </div>
+            <p class="text-center">
+                The correlation of all SDGs displaxed in the matrix above
+            </p>
+             <div>
+              <img src="Corr_matrix_p<0.05.png" class="tribute-img img-thumbnail img-responsive" alt="Social Enterprise">
+            </div>
+             <p class="text-center">
+                The correlations where filtered and every correlation with a higher p-value than 0.05 are eliminated.
+            </p>
+             <div>
+              <img src="corr>0.4_p<0.05.png" class="tribute-img img-thumbnail img-responsive" alt="Social Enterprise">
+            </div>
+            <p class="text-center">
+                Finally, all values with a moderate to strong correlation were kept. These are all values with r>=0.4.
+            </p>
+            <div>
+              <img src="countries_impact_barplot.png" class="tribute-img img-thumbnail img-responsive" alt="Social Enterprise">
             </div>
           <h1 class="page-header text-center">Interactive World Maps</h1>
         
